@@ -1,0 +1,58 @@
+
+.bottom {
+	background-color: #2f303a;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	&-logo {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	color: var(--main-bg-color);
+	display: flex;
+	margin-bottom: 20px;
+}
+    &-address {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	color: var(--accent-color);
+}
+    &-mail,
+    &-tel {
+	font-style: normal;
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: rgba(255, 255, 255, 0.6);
+	text-decoration: none;
+	transition: var(--main-transition);
+}
+    &-mail:hover,
+    &-mail:focus,
+    &-tel:hover,
+    &-tel:focus {
+	color: var(--main-bg-color);
+}
+    &-item {
+	margin-bottom: 9px;
+}
+    
+
+}
+
+.studio {
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+	color: var(--accent-color);
+	text-decoration: none;
+}

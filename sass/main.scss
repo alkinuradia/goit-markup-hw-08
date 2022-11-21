@@ -1,0 +1,24 @@
+@import './untils/vars';
+
+
+@import './base/reset';
+@import './base/common';
+@import './untils/visually-hidden';
+@import './untils/placeholders';
+@import './components/container';
+
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/section';
+@import './layouts/illustration';
+@import './layouts/team';
+@import './layouts/client';
+@import './layouts/footer-adress';
+@import './layouts/footer-soc';
+@import './layouts/footer-subscription';
+
+@import './layouts/navigation';
+@import './layouts/portfolio';
+
+@import './components/modal';

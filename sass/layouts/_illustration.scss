@@ -1,0 +1,39 @@
+
+.illustration {
+	padding-top: 0;
+}
+.illustration__title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	letter-spacing: 0.03em;
+	color: var(--secondary-color);
+	margin-bottom: 50px;
+	text-align: center;
+}
+.illustration-list {
+	display: flex;
+	gap: 30px;
+}
+.illustration-list__item {
+	position: relative;
+}
+.illustration-list__wrap {
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+}
+.illustration-list__text {
+    font-family: inherit;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--accent-color);
+	padding: 27px 0;
+}
