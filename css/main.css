@@ -94,16 +94,25 @@ body {
   }
 }
 
-.header {
-  border-bottom: 1px solid #ECECEC;
-  max-width: 100%;
+@media screen and (min-width: 768px) {
+  header {
+    border-bottom: 1px solid #ececec;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header {
+    border-bottom: 1px solid #ececec;
+    max-width: 100%;
+  }
 }
 
 .container.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 25px 0 24px 0;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .navigation {
@@ -112,45 +121,104 @@ body {
 }
 
 .menu {
-  display: flex;
+  display: none;
   gap: 50px;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    margin-left: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    margin-left: 94px;
+    display: flex;
+  }
 }
 
 .navigation__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-bg-color);
   text-decoration: none;
-  margin-right: 93px;
+}
+@media screen and (min-width: 768px) {
+  .navigation__logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__logo {
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
+  }
 }
 
 .connect {
-  display: flex;
-  align-items: center;
-  gap: 50px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .connect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .connect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
 }
 
 span {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  span {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+@media screen and (min-width: 1200px) {
+  span {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .menu__link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
   text-decoration: none;
   transition: var(--main-transition);
+}
+@media screen and (min-width: 768px) {
+  .menu__link {
+    line-height: 1.17;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__link {
+    line-height: 1.14;
+  }
 }
 .menu__link:hover, .menu__link:focus {
   color: var(--main-bg-color);
@@ -223,11 +291,11 @@ span {
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  width: 360px;
+  max-width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
