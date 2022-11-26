@@ -82,18 +82,21 @@
                 <h2 class="illustration__title">Чим ми займаємося</h2>
                 <ul class="illustration-list list">
                     <li class="illustration-list__item">
+                        <source srcset="./image/box1.jpg 1x, ./image/box1-2x.jpg 2x" media="(min-width: 1200px)">
                         <img src="./image/box1.jpg" alt="розробка сайтів" width="370">
                         <div class="illustration-list__wrap">
                             <h3 class="illustration-list__text">Десктопні додатки</h3>
                         </div>
                     </li>
                     <li class="illustration-list__item">
+                        <source srcset="./image/box2.jpg 1x, .//image/box2-2x.jpg 2x" media="(min-width:1200px)">
                         <img src="./image/box2.jpg" alt="розробка мобільних додатків" width="370">
                         <div class="illustration-list__wrap">
                             <h3 class="illustration-list__text">Мобільні додатки</h3>
                         </div>
                     </li>
                     <li class="illustration-list__item">
+                        <source srcset="./image/box3.jpg 1x, .//image/box3-2x.jpg 2x" media="(min-width:1200px)">
                         <img src="./image/box3.jpg" alt="кольорове оформлення сайту" width="370">
                         <div class="illustration-list__wrap">
                             <h3 class="illustration-list__text">Дизайнерські рішення</h3>
@@ -107,7 +110,13 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team-list list">
                     <li class="team-list__item">
-                        <img src="./image/teamcard3.jpg" alt="чоловік в окулярах" width="270"> 
+                        <source srcset="./image/teamcard3-mob.jpg 1x, ./image/teamcard3-mob-2x.jpg 2x"
+                            media="(min-width: 320px)">
+                        <source srcset="./image/teamcard3-tb.jpg 1x, ./image/teamcard3-tb-2x.jpg 2x"
+                            media="(min-width: 768px, max-width: 1199px)">
+                        <source srcset="./image/teamcard3.jpg 1x, ./image/teamcard3-2x.jpg 2x" 
+                            media="(min-width: 1200px)">
+                        <img src="./image/teamcard3-mob.jpg" alt="чоловік в окулярах" width="270"> 
                         <div class="card">                           
                             <h3 class="card__title">Ігор Дем'яненко</h3>
                             <p lang="en" class="card__after-title">Product Designer</p>
@@ -136,7 +145,13 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./image/teamcard2.jpg" alt="жінка в окулярах" width="270">   
+                        <source srcset="./image/teamcard2-mb.jpg 1x, ./image/teamcard2-mb-2x.jpg 2x"
+                        media="(min-width: 320px)">
+                        <source srcset="./image/teamcard2-tb.jpg 1x, ./image/teamcard2-tb-2x.jpg 2x"
+                        media="(min-width: 768px, max-width: 1199px)">
+                        <source srcset="./image/teamcard2.jpg 1x, ./image/teamcard2-2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+                        <img src="./image/teamcard2-mb.jpg" alt="жінка в окулярах" width="270">   
                         <div class="card">                         
                             <h3 class="card__title">Ольга Рєпіна</h3>
                             <p lang="en" class="card__after-title">Frontend Developer</p>
@@ -165,7 +180,13 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./image/teamcard1.jpg" alt="чоловік" width="270">  
+                        <source srcset="./image/teamcard1-mb.jpg 1x, ./image/teamcard1-mb-2x.jpg 2x"
+                        media="(min-width: 320px)">
+                        <source srcset="./image/teamcard1-tb.jpg 1x, ./image/teamcard1-tb-2x.jpg 2x"
+                        media="(min-width: 768px, max-width: 1199px)">
+                        <source srcset="./image/teamcard1.jpg 1x, ./image/teamcard1-2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+                        <img src="./image/teamcard1-mb.jpg" alt="чоловік" width="270">  
                         <div class="card">                          
                             <h3 class="card__title">Микола Тарасов</h3>
                             <p lang="en" class="card__after-title">Marketing</p>
@@ -194,7 +215,13 @@
                         </div>
                     </li>
                     <li class="team-list__item">
-                        <img src="./image/teamcard4.jpg" alt="чоловік" width="270">
+                        <source srcset="./image/teamcard4-mb.jpg 1x, ./image/teamcard4-mb-2x.jpg 2x"
+                        media="(min-width: 320px)">
+                        <source srcset="./image/teamcard4-tb.jpg 1x, ./image/teamcard4-tb-2x.jpg 2x"
+                        media="(min-width: 768px, max-width: 1199px)">
+                        <source srcset="./image/teamcard4.jpg 1x, ./image/teamcard4-2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+                        <img src="./image/teamcard4-mb.jpg" alt="чоловік" width="270">
                         <div class="card">
                             <h3 class="card__title">Михайло Єрмаков</h3>
                             <p lang="en" class="card__after-title">UI Designer</p>
@@ -263,7 +290,7 @@
             </div>
         </section> 
     </main>
-    <!-- <footer class="bottom">
+    <footer class="bottom">
         <div class="footer-container container">
             <div class="footer-adress">
                 <a href="./index.html" class="bottom-logo">
@@ -333,7 +360,7 @@
                 </form>
             </div>   
         </div>    
-    </footer> -->
+    </footer>
                      <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
