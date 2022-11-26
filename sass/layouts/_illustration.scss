@@ -1,6 +1,13 @@
 
 .illustration {
 	padding-top: 0;
+	display: none;
+	
+	 @include desktop {
+		display: block;
+        padding-bottom: 94px;
+	 }
+	
 }
 .illustration__title {
 	font-weight: 700;

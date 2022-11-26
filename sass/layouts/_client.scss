@@ -1,21 +1,33 @@
+.client {
+    padding-top: 60px;
+    padding-bottom: 60px;
 
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
 .client__title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 0.86;
-	letter-spacing: 0.03em;
-	text-align: center;
-	color: var(--secondary-color);
-	margin-bottom: 50px;
+	@include title;
 }
 .icon-list {
 	display: flex;
 	gap: 30px;
+	flex-wrap: wrap;
+
+	width: 100%;
 }
 .icon-list__item {
-	width: calc((100% - 150px) / 6);
+	@include calc(2);
+	@include tablet {
+		@include calc(3);
+	}
+	@include desktop {
+		@include calc(6);
+	}
 	height: 90px;
 }
+
 .icon-list__link {
 	width: 100%;
 	height: 100%;

@@ -1,0 +1,38 @@
+@mixin mobile {
+    @media screen and (min-width: 480px ) {
+        @content;
+    } 
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px ) {
+        @content;
+    } 
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1200px ) {
+        @content;
+    } 
+}
+
+@mixin calc($count) {
+    width: calc((100% - 30px * ($count - 1)) / $count); 
+}
+
+@mixin title {
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+    }
+}
