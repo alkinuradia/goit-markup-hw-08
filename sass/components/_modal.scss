@@ -146,13 +146,17 @@
 	font-family: inherit;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 1.71;
+	font-size: 12px;
+	line-height: 0.86;
 	letter-spacing: 0.03em;
 	color: var(--main-color);
 	display: flex;
 	align-items: center;
 	margin-bottom: 30px;
+	@include desktop {
+	font-size: 14px;
+	line-height: 1.71;
+	}
 }
 .check-text span {
 	width: 16px;

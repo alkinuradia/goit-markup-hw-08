@@ -845,6 +845,33 @@ span {
   background-color: var(--main-bg-color);
 }
 
+.menu-open {
+  position: absolute;
+  display: flex;
+  top: 10px;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.menu-open:hover {
+  fill: var(--main-bg-color);
+}
+.menu-open:focus {
+  fill: var(--main-bg-color);
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu-open {
+    display: none;
+  }
+}
+
 .mob-menu {
   position: fixed;
   top: 0;
@@ -1380,13 +1407,19 @@ span {
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 0.86;
   letter-spacing: 0.03em;
   color: var(--main-color);
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check-text span {
