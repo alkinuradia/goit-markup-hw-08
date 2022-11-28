@@ -78,7 +78,7 @@ body {
   padding-right: 15px;
   margin: 0 auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 300px) {
   .container {
     max-width: 480px;
   }
@@ -389,7 +389,7 @@ span {
   color: var(--secondary-color);
   margin-bottom: 10px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 300px) {
   .pic-list__subtitle {
     text-align: center;
   }
@@ -1071,6 +1071,7 @@ span {
 }
 
 .subscription__form {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
