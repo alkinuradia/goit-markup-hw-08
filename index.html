@@ -379,22 +379,25 @@
             <div class="subscription">
                 <p class="subscription__text">підпишіться на розсилку</p>
                 <form action="#" class="subscription__form">
-                  <label for="mail-subscription">
-                    <input
-                      class="mail-subscription"
-                      type="mail"
-                      placeholder="E-mail"
-                      name="mail-subscription"
-                      id="mail-subscription"
-                    />
-                  </label>
-                  <button class="submit-btn" type="submit">
-                    Підписатися
-                    <svg class="icon-subscription" width="20" height="20">
-                      <use href="./image/icons.svg#icon-send"></use>
-                    </svg>
-                  </button>
-                </form>
+                  <div class="mail-subscription">
+                    <label for="mail-subscription">
+                        <input
+                          class="mail-subscription"
+                          type="mail"
+                          placeholder="E-mail"
+                          name="mail-subscription"
+                          id="mail-subscription"
+                        />
+                      </label>
+                  </div>
+                  <div class="submit-button">
+                    <button class="submit-btn" type="submit">
+                        Підписатися
+                        <svg class="icon-subscription" width="20" height="20">
+                          <use href="./image/icons.svg#icon-send"></use>
+                        </svg>
+                      </button>
+                  </div>
             </div>   
         </div>    
     </footer>
