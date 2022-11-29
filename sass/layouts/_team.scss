@@ -3,19 +3,16 @@
 	background-color: 
 	#F5F4FA;
 	text-align: center;
-	padding-top: 30px;
-    padding-bottom: 30px;
-
-    @media screen and (min-width:1200px) {
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
 }
 .team-list {
 	display: flex;
 	gap: 30px;
 	flex-wrap: wrap;
 	width: 100%;
+	padding-bottom: 60px;
+	@include desktop {
+		padding-bottom: 94px;
+	}
 
 }
 .team-list__item {
@@ -39,6 +36,11 @@
 }
 .team__title {
 	@include title;
+	padding-top: 60px;
+
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+    }
 }
 .card__title {
 	font-weight: 500;
